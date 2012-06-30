@@ -1,0 +1,228 @@
+/* @override http://localhost/werk/ikhoefgeen.nl/www/current/follow-me/assets/screen.css */
+
+body, h1 {
+	margin: 0;
+	padding:0;
+
+	font-family: Times;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 10em;
+	line-height: 1em;
+}
+
+h1 .i {
+	display: inline-block;
+	color: red;
+	position: relative;
+	margin-right: -0.28em;
+	height: 0.25em;
+	top: -0.50em; /* Firefox */
+	overflow: hidden;
+}
+
+#indicator {
+	-webkit-transition-property: color;
+	-webkit-transition-duration: 150ms;
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+/* Een fade-out onderaan het venster; niet actief */
+
+#footer {
+	display: none;
+	position:fixed;
+	bottom: 0;
+	height: 30px;
+	width: 100%;
+	
+	background: transparent url(fade.png) 0 0 repeat-x;
+}
+
+#follow_me ul, h1 {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#follow_me ul {
+	font: 16px 'Lucida Grande';
+	padding: 0;
+}
+
+#follow_me a {
+	text-decoration: none;
+}
+
+#follow_me a:hover {
+	text-decoration: underline;
+}
+
+#follow_me .me {
+	font-style: italic;
+}
+
+#follow_me .new {
+	background: #DEB5B4;
+}
+
+#follow_me .timestamp {
+	display: none;
+}
+
+#follow_me ul li:hover .timestamp {
+	display: block;
+	float: left;
+	margin-left: -90px;
+	width: 70px;
+	text-align: right;
+	color: #333;
+	font-size: 0.6em;
+}
+
+#follow_me ul li {
+	list-style: none;
+	margin: 10px;
+	padding: 10px;
+	
+	border-bottom: 1px dashed #e3e3e3;
+
+	min-height: 38px;
+}
+
+#follow_me ul li img.icon {
+	border: 0;
+	width: 48px;
+	height: 48px;
+	margin: -10px 10px -10px -10px;
+	float: left;
+}
+
+/* @group Service_LastFM */
+
+.last_fm img.album_art {
+	width: 48px;
+	height: 48px;
+	background: #e3e3e3 url(last_fm.png) center center no-repeat;
+}
+
+.last_fm img.preview {
+	width: 16px;
+	height: 16px;
+	margin-bottom: -3px;
+	cursor: pointer;
+}
+
+.progress-bar {
+	background: transparent url(progress-bar.png) 0 0 no-repeat;
+}
+
+/* @end */
+
+/* @group Service_Twitter */
+
+.twitter_com img.avatar {
+	width: 48px;
+	height: 48px;
+	background: transparent url(http://static.twitter.com/images/default_profile_normal.png) 0 0 no-repeat;
+}
+
+.twitter_com img.emoji-icon {
+	width: 20px;
+	height: 20px;
+	margin-bottom: -4px;
+}
+
+.twitter_com a.name {
+	
+}
+
+.tinyurl_expand,
+.tinyurl_contract {
+	font-size: 75%;
+	color: gray;
+	margin-left: 5px;
+}
+
+.tinyurl_expand:before,
+.tinyurl_contract:before {
+	content: '(';
+}
+
+.tinyurl_expand:after,
+.tinyurl_contract:after {
+	content: ')';
+}
+
+/* @end */
+
+/* @group Service_RSS */
+
+.rss img.logo {
+	width: 48px;
+	height: 48px;
+}
+
+
+
+/* @end */
+
+/* @group Service_Weewar */
+
+.weewar img.map {
+	padding: 6px 0;
+	width: 48px;
+	height: 35px;
+}
+
+
+
+/* @end */
+
+/* @group Quicklook */
+
+a.quicklook:after {
+	/*content: ' ⎋'; /* ⧉ ⧂ ⎋ */
+	color: black;
+}
+
+a.quicklook {
+	padding-right: 17px;
+	background: transparent url(eye-kleiner.png) center right no-repeat;
+}
+
+/* @end */
+
+/* @group Searchbox */
+
+#quicksearchbox {
+	display: block;
+	position: fixed;
+	bottom: 50px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#quicksearchbox input {
+	display: block;
+	background: transparent url(background_80black.png) 0 0 repeat;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border: 0;
+	font-size: 40px;
+	padding: 10px;
+	margin: 0 auto;
+	color: white;
+}
+
+#quicksearchbox input:focus {
+	outline: none;
+}
+
+/* @end */

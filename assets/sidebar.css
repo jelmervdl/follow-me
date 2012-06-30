@@ -1,0 +1,54 @@
+h1 {
+	margin: 10px;
+	font-size: 3em;
+}
+
+#follow_me ul, h1 {
+	width: 95%;
+}
+
+#follow_me ul {
+	font-size: 12px;
+}
+
+#follow_me ul li {
+	margin: 0;
+	padding: 10px;
+	min-height: 48px;
+	
+	position: relative;
+}
+
+#follow_me ul li img.icon {
+	margin: 0 10px 10px 0;
+}
+
+#follow_me ul li .timestamp,
+#follow_me ul li:hover .timestamp {
+	display: block;
+	position: absolute;
+	top: 48px;
+	left: 10px;
+	width: 48px;
+	height: 10px;
+	overflow: hidden;
+	background: silver;
+	float: none;
+	color: #333;
+	text-align: center;
+	font-size: 0.6em;
+	margin: 0;
+}
+
+#follow_me ul li .timestamp {
+	display: none;
+}
+
+.twitter_com img.emoji-icon {
+	width: 16px;
+	height: 16px;
+}
+
+.progress-bar {
+	background: transparent url(progress-bar.png) 0 10px no-repeat;
+}
